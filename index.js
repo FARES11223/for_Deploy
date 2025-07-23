@@ -6,6 +6,10 @@ const app = express();
 
 app.use(express.json());
 
+app.get("/", (req, res) => {
+  res.send("Hello ,Task Manager App");
+});
+
 app.get("/hello", (req, res) => {
   res.send("Task Manager App");
 });
